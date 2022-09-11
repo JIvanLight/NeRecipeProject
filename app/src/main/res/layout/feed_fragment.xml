@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listRecipes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FeedFragment">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/filterGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacingStart"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/recipeRecycleView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:selectionRequired="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_european"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/european"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_asian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/asian"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_pan_asian"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/pan_asian" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_eastern"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/eastern" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_american"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/american"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_russian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/russian"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_mediterranean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/mediterranean"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            />
+    </com.google.android.material.chip.ChipGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipeRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/tabs"
+        app:layout_constraintTop_toBottomOf="@id/filterGroup" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/tab_recipes" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/tab_favorites" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tabs"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
