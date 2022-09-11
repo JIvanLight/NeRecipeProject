@@ -9,4 +9,8 @@
     <string name="american">American</string>
     <string name="russian">Russian</string>
     <string name="mediterranean">Mediterranean</string>
+    <string name="filter" translatable="false">filter</string>
+    <string name="search">Search</string>
+    <string name="remove">Remove</string>
+    <string name="edit">Edit</string>
 </resources>

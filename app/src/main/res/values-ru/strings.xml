@@ -9,4 +9,7 @@
     <string name="american">Американская</string>
     <string name="russian">Русская</string>
     <string name="mediterranean">Средиземноморская</string>
+    <string name="search">Поиск</string>
+    <string name="remove">Удалить</string>
+    <string name="edit">Редактировать</string>
 </resources>

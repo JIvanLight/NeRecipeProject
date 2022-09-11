@@ -13,4 +13,31 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="ThemeOverlay.NeRecipeProject.Popup" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ThemeOverlay.NeRecipeProject.AppBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="TextAppearance.NeRecipeProject.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="Widget.AppTheme.OptionsButton" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="iconTint">@color/black</item>
+        <item name="iconPadding">0dp</item>
+        <item name="minHeight">@dimen/button_min_size</item>
+        <item name="minWidth">@dimen/button_min_size</item>
+    </style>
+
+    <style name="Widget.AppTheme.FavoriteButton" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="iconTint">@color/favorite_selector</item>
+        <item name="rippleColor">@color/yellow</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="iconPadding">0dp</item>
+        <item name="minHeight">@dimen/button_min_size</item>
+        <item name="minWidth">@dimen/button_min_size</item>
+    </style>
+
 </resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipeCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacingStart">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/titleRecipe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacingStart"
+        android:layout_marginEnd="@dimen/spacingEnd"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.NeRecipeProject.Text"
+        app:layout_constraintBottom_toTopOf="@id/authorRecipe"
+        app:layout_constraintEnd_toStartOf="@id/options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Название" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/authorRecipe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.NeRecipeProject.Text"
+        app:layout_constraintBottom_toTopOf="@id/categoryRecipe"
+        app:layout_constraintEnd_toEndOf="@id/titleRecipe"
+        app:layout_constraintStart_toStartOf="@id/titleRecipe"
+        app:layout_constraintTop_toBottomOf="@id/titleRecipe"
+        tools:text="Автор" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/categoryRecipe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.NeRecipeProject.Text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/titleRecipe"
+        app:layout_constraintStart_toStartOf="@id/titleRecipe"
+        app:layout_constraintTop_toBottomOf="@id/authorRecipe"
+        tools:text="Русская" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/options"
+        style="@style/Widget.AppTheme.OptionsButton"
+        android:layout_width="@dimen/button_min_size"
+        android:layout_height="wrap_content"
+        android:checkable="true"
+        app:icon="@drawable/ic_baseline_more_vert_32"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/favorite"
+        style="@style/Widget.AppTheme.FavoriteButton"
+        android:layout_width="@dimen/button_min_size"
+        android:layout_height="wrap_content"
+        android:checkable="true"
+        app:icon="@drawable/ic_baseline_star_border_32"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/options" />
+</androidx.constraintlayout.widget.ConstraintLayout>
