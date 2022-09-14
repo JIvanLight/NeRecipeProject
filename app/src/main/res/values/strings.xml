@@ -13,4 +13,8 @@
     <string name="search">Search</string>
     <string name="remove">Remove</string>
     <string name="edit">Edit</string>
+    <string name="select_image">Select image</string>
+    <string name="edit_recipe_title">Title</string>
+    <string name="edit_recipe_author">Author</string>
+    <string name="category">Category</string>
 </resources>

@@ -2,6 +2,7 @@
 <resources>
     <dimen name="spacingStart">16dp</dimen>
     <dimen name="spacingEnd">8dp</dimen>
+    <dimen name="spacingTop">8dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="button_min_size">48dp</dimen>
 

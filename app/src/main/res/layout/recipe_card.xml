@@ -15,7 +15,7 @@
         android:layout_marginEnd="@dimen/spacingEnd"
         android:ellipsize="end"
         android:maxLines="1"
-        android:textAppearance="@style/TextAppearance.NeRecipeProject.Text"
+        android:textAppearance="@style/TextAppearance.NeRecipeProject.Text.RecipeCard"
         app:layout_constraintBottom_toTopOf="@id/authorRecipe"
         app:layout_constraintEnd_toStartOf="@id/options"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:ellipsize="end"
         android:singleLine="true"
-        android:textAppearance="@style/TextAppearance.NeRecipeProject.Text"
+        android:textAppearance="@style/TextAppearance.NeRecipeProject.Text.RecipeCard"
         app:layout_constraintBottom_toTopOf="@id/categoryRecipe"
         app:layout_constraintEnd_toEndOf="@id/titleRecipe"
         app:layout_constraintStart_toStartOf="@id/titleRecipe"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:ellipsize="end"
         android:singleLine="true"
-        android:textAppearance="@style/TextAppearance.NeRecipeProject.Text"
+        android:textAppearance="@style/TextAppearance.NeRecipeProject.Text.RecipeCard"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/titleRecipe"
         app:layout_constraintStart_toStartOf="@id/titleRecipe"
@@ -50,7 +50,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/options"
-        style="@style/Widget.AppTheme.OptionsButton"
+        style="@style/Widget.NeRecipeProjectTheme.OptionsButton"
         android:layout_width="@dimen/button_min_size"
         android:layout_height="wrap_content"
         android:checkable="true"
@@ -61,7 +61,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/favorite"
-        style="@style/Widget.AppTheme.FavoriteButton"
+        style="@style/Widget.NeRecipeProjectTheme.FavoriteButton"
         android:layout_width="@dimen/button_min_size"
         android:layout_height="wrap_content"
         android:checkable="true"

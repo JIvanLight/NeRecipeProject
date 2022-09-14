@@ -12,4 +12,8 @@
     <string name="search">Поиск</string>
     <string name="remove">Удалить</string>
     <string name="edit">Редактировать</string>
+    <string name="select_image">Выбрать изображения</string>
+    <string name="edit_recipe_title">Название</string>
+    <string name="edit_recipe_author">Автор</string>
+    <string name="category">Категория</string>
 </resources>

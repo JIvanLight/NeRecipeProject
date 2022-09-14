@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacingStart">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/stepNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacingStart"
+        android:textAppearance="@style/TextAppearance.NeRecipeProject.Text.RecipeStepTitle"
+        app:layout_constraintBottom_toTopOf="@id/stepTextEdit"
+        app:layout_constraintEnd_toStartOf="@id/stepTitleEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1." />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/stepTitleEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.NeRecipeProject.Text.RecipeStepTitle"
+        app:layout_constraintBottom_toTopOf="@id/stepTextEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/stepNumber"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Приготовить необходимую посуду" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/stepTextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textAppearance="@style/TextAppearance.NeRecipeProject.Text.RecipeStepText"
+        app:layout_constraintTop_toBottomOf="@id/stepTitleEdit"
+        tools:text="Кастлюля ёмкостью 3л." />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/stepImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/stepTextEdit"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Year"
+        tools:src="@drawable/pot" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/selectImageButton"
+        style="@style/Widget.NeRecipeProjectTheme.SelectImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacingStart"
+        android:gravity="center"
+        android:text="@string/select_image"
+        app:layout_constraintEnd_toEndOf="@id/stepImage"
+        app:layout_constraintStart_toStartOf="@id/stepImage"
+        app:layout_constraintTop_toBottomOf="@id/stepImage"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Day" />
+</androidx.constraintlayout.widget.ConstraintLayout>
