@@ -5,5 +5,8 @@
     <dimen name="spacingTop">8dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="button_min_size">48dp</dimen>
-
+    <dimen name="recipe_card">20sp</dimen>
+    <dimen name="recipe_step_title">16sp</dimen>
+    <dimen name="recipe_step_text">12sp</dimen>
+    <dimen name="button_select_image_elevation">4dp</dimen>
 </resources>

@@ -18,27 +18,34 @@
 
     <style name="ThemeOverlay.NeRecipeProject.AppBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
+    <style name="Theme.NeRecipeProject.NoActionBar">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
     <style name="TextAppearance.NeRecipeProject.Text" parent="@android:style/TextAppearance">
         <item name="android:typeface">serif</item>
     </style>
 
     <style name="TextAppearance.NeRecipeProject.Text.RecipeCard">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">@dimen/recipe_card</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="TextAppearance.NeRecipeProject.Text.RecipeStepTitle">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/recipe_step_title</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="TextAppearance.NeRecipeProject.Text.RecipeStepText">
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/recipe_step_text</item>
         <item name="android:textStyle">italic</item>
     </style>
 
     <style name="Widget.NeRecipeProjectTheme.OptionsButton" parent="Widget.MaterialComponents.Button.TextButton.Icon">
         <item name="iconTint">@color/black</item>
+        <item name="rippleColor">@color/white</item>
         <item name="iconPadding">0dp</item>
         <item name="minHeight">@dimen/button_min_size</item>
         <item name="minWidth">@dimen/button_min_size</item>
@@ -46,7 +53,7 @@
 
     <style name="Widget.NeRecipeProjectTheme.FavoriteButton" parent="Widget.MaterialComponents.Button.TextButton.Icon">
         <item name="iconTint">@color/favorite_selector</item>
-        <item name="rippleColor">@color/yellow</item>
+        <item name="rippleColor">@color/white</item>
         <item name="backgroundTint">@android:color/transparent</item>
         <item name="iconPadding">0dp</item>
         <item name="minHeight">@dimen/button_min_size</item>
@@ -55,6 +62,7 @@
 
     <style name="Widget.NeRecipeProjectTheme.SelectImageButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="iconTint">?attr/colorControlNormal</item>
+        <item name="android:elevation">@dimen/button_select_image_elevation</item>
         <item name="android:textAppearance">
             @style/TextAppearance.NeRecipeProject.Text.RecipeStepTitle
         </item>
@@ -69,11 +77,10 @@
         <item name="iconTint">?attr/colorControlNormal</item>
         <item name="backgroundTint">@android:color/transparent</item>
         <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="android:elevation">@dimen/button_select_image_elevation</item>
         <item name="iconPadding">0dp</item>
         <item name="enforceTextAppearance">false</item>
         <item name="minHeight">@dimen/button_min_size</item>
         <item name="minWidth">@dimen/button_min_size</item>
-
     </style>
-
 </resources>

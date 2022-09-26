@@ -2,6 +2,10 @@
     <string name="app_name" translatable="false">NeRecipeProject</string>
     <string name="tab_recipes">Recipes</string>
     <string name="tab_favorites">Favorites</string>
+    <string name="step_number" translatable="false">%1$d.</string>
+    <string name="main_fragment">Main</string>
+    <string name="content_fragment">Editing</string>
+    <string name="parts_fragment">Recipe</string>
     <string name="european">European</string>
     <string name="asian">Asian</string>
     <string name="pan_asian">Pan-Asian</string>
@@ -17,4 +21,6 @@
     <string name="edit_recipe_title">Title</string>
     <string name="edit_recipe_author">Author</string>
     <string name="category">Category</string>
+    <string name="empty_fields">The recipe must not have empty fields!</string>
+    <string name="choose_category">Choose category</string>
 </resources>

@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/feedFragment">
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="ru.jivan.nerecipeproject.ui.FeedFragment"
+        android:label="@string/main_fragment"
+        tools:layout="@layout/feed_fragment">
+        <action
+            android:id="@+id/to_recipePartsFragment"
+            app:destination="@id/recipePartsFragment" />
+        <action
+            android:id="@+id/to_recipeContentFragment"
+            app:destination="@id/recipeContentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipePartsFragment"
+        android:name="ru.jivan.nerecipeproject.ui.RecipePartsFragment"
+        android:label="@string/parts_fragment">
+        <argument
+            android:name="recipeId"
+            app:argType="long" />
+        <action
+            android:id="@+id/recipePartsFragment_to_recipeContentFragment"
+            app:destination="@id/recipeContentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipeContentFragment"
+        android:name="ru.jivan.nerecipeproject.ui.RecipeContentFragment"
+        android:label="@string/content_fragment">
+        <argument
+            android:name="recipeId"
+            app:argType="long" />
+    </fragment>
 </navigation>

@@ -2,6 +2,9 @@
 <resources>
     <string name="tab_recipes">Рецепты</string>
     <string name="tab_favorites">Избранное</string>
+    <string name="main_fragment">Главная</string>
+    <string name="content_fragment">Редактирование</string>
+    <string name="parts_fragment">Рецепт</string>
     <string name="european">Европейская</string>
     <string name="asian">Азиатская</string>
     <string name="pan_asian">Паназиатская</string>
@@ -16,4 +19,6 @@
     <string name="edit_recipe_title">Название</string>
     <string name="edit_recipe_author">Автор</string>
     <string name="category">Категория</string>
+    <string name="empty_fields">Рецепт не должен иметь пустые поля!</string>
+    <string name="choose_category">Выберите категорию</string>
 </resources>

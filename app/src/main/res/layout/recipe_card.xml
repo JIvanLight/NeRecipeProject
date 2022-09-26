@@ -65,7 +65,7 @@
         android:layout_width="@dimen/button_min_size"
         android:layout_height="wrap_content"
         android:checkable="true"
-        app:icon="@drawable/ic_baseline_star_border_32"
+        app:icon="@drawable/ic_star_selector"
         app:iconGravity="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
